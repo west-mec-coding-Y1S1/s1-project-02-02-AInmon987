@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
+
 <head>
-<!--
+    <!--
     New Perspectives on HTML5 and CSS3, 7th Edition
     Tutorial 1
     Case Problem 3
@@ -12,14 +13,47 @@
 
     Filename: dr_info.html
    -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Diane's Run Race Info</title>
+    <!-- In the head the Links tell the internet and the browser how the WebSite is supposted to perform. The css is the style of the particluar website.  -->
+    <meta charset="utf-8">
+    <title>Diane's Run Race Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="dr_base.css" />
+    <link rel="stylesheet" href="dr_layout2.css">
 
 </head>
+<!-- The bod has a header inside and in the header there is a navagation list with an unordered list of index, Info, FAQ and these help go to different areas and the items have certain names that are connected to the items.  -->
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="dr_info.html">Race Info</a>
+                </li>
+                <li>
+                    <a href="dr_faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
 
+    </header>
+    <!-- The section is not fully finish but it has a piece of the text in the section. The date is in a time element with a datetime attribute with the text Tuesday, August 29, 2017  -->
+    <section>
+        <header>
+            <p>
+                Page last updated:
+                <time datetime="2017-08-29">Tuesday, August 29, 2017</time>
+
+            </p>
+        </header>
+    </section>
+    <!-- The footer has the contact information and has the charatcer code. The character code breaks the text up but not just space, but by simple symbols.  -->
+    <footer>
+        Diane’s Run &#9829; 45 Mountain Drive &#9829; Cheyenne, WY 82001
+    </footer>
 </body>
 
 </html>
